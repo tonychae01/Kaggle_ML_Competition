@@ -16,20 +16,17 @@ This repository contains the code and supporting files for the liver cirrhosis c
 ## Repository Structure
 
 ├── data/
-│   ├── train.csv
-│   ├── test.csv
-│   └── README.md
-├── notebooks/
+│   ├── train.npy
+│   ├── test_label.npy
+│   
+├── model/
 │   ├── 01_data_exploration.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_modeling_and_tuning.ipynb
-├── src/
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   ├── models.py
-│   ├── train.py
-│   └── evaluate.py
-├── requirements.txt
+│   ├── 02 pseudo_data_gen_model.ipynb
+│   └── 03 some models...ipynb (XGBOOST, CatBoost, RF)
+├── other/
+│   ├── best_param.pkl
+│   
+├── Final_Report.pdf
 └── README.md
 
 
