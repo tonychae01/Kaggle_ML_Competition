@@ -1,6 +1,6 @@
 # Kaggle_ML_Competition
 - Top 3 Winner at Data Science Lab Kaggle Competition
-```markdown
+
 # Liver Cirrhosis Prediction 🏆
 
 **Tony Chae – 3rd Place, Kaggle Cirrhosis Prediction Competition**
