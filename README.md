@@ -5,7 +5,14 @@
 **Tony Chae – 3rd Place among 150 teams, Kaggle Cirrhosis Prediction Competition**
 
 ---
-For Detail Report Please Click: (Kaggle_ML_Competition/Kaggle Report.pdf)
+## 📄 Kaggle Competition Report
+
+[![View PDF Report](https://img.shields.io/badge/View%20Report-PDF-blue?style=flat-square&logo=adobe)](Kaggle_ML_Competition/Kaggle%20Report.pdf)
+
+> **Note:** You can also click the badge above or use the link below  
+> [**Open the full PDF report**](Kaggle_ML_Competition/Kaggle%20Report.pdf)
+>
+
 ## Overview
 
 This repository contains the code and supporting files for the liver cirrhosis classification project that earned **3rd place** in the [Kaggle Cirrhosis Prediction Competition](https://www.kaggle.com/competitions) under the “multi-class classification” challenge. We leverage advanced data-cleaning, feature-engineering, and ensemble modeling techniques to predict patient status across three classes with high accuracy and low log loss.
