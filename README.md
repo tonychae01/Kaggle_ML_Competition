@@ -2,7 +2,7 @@
 
 # Kaggle_ML_Competition: Liver Cirrhosis Prediction 🏆
 
-**Tony Chae – 3rd Place among 108 participant, Kaggle Cirrhosis Prediction Competition**
+**Tony Chae – 3rd Place among 150 teams, Kaggle Cirrhosis Prediction Competition**
 
 ---
 
