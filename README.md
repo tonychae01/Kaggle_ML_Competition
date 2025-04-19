@@ -15,7 +15,6 @@ This repository contains the code and supporting files for the liver cirrhosis c
 
 ## Repository Structure
 
-```
 ├── data/
 │   ├── train.csv
 │   ├── test.csv
@@ -32,7 +31,7 @@ This repository contains the code and supporting files for the liver cirrhosis c
 │   └── evaluate.py
 ├── requirements.txt
 └── README.md
-```
+
 
 ---
 
