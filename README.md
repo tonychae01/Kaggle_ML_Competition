@@ -61,7 +61,7 @@ This repository contains the code and supporting files for the liver cirrhosis c
 - **Training set**: 15,000 samples with 20 features  
 - **Test set**: 10,000 samples (unlabeled)  
 - **Target classes**: 3 liver cirrhosis statuses  
-- **Feature types**: categorical, continuous, integer citeturn0file0
+- **Feature types**: categorical, continuous, integer 
 
 ---
 
