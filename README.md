@@ -13,6 +13,11 @@
 > [**Open the full PDF report**](Kaggle%20Report.pdf)
 >
 
+## Key Contributions:
+-	Identified seven clinical categorical variables (e.g., Ascites, Spiders) and continuous labs; compared SimpleImputer (mean/mode), IterativeImputer (MissForest), and uniform random sampling for missingness, then applied one hot encoding and min max normalization to harmonize 20 raw features into a consistent modeling matrix.
+-	Engineered seven additional predictors by capturing key clinical interdependencies - grouping NA patterns across Ascites/Hepatomegaly/Spiders and encoding Bilirubin–Edema relationships—expanding the feature set to 27 dimensions and boosting separability across the three cirrhosis stages.
+- Trained an ensemble of five XGBoost (multi:softprob) models on CUDA, averaging soft probabilities; optimized hyperparameters via Optuna (e.g., max_depth=12, min_child_weight=8, subsample=0.9666, colsample_bytree=0.1236, learning_rate=0.0262, n_estimators=687), achieving top 3 performance by log loss, and evaluated pseudo labeling (≥ 0.90 confidence) to augment training to ~22 k samples.
+
 ## Overview
 
 This repository contains the code and supporting files for the liver cirrhosis classification project that earned **3rd place** in the [Kaggle Cirrhosis Prediction Competition](https://www.kaggle.com/competitions) under the “multi-class classification” challenge. We leverage advanced data-cleaning, feature-engineering, and ensemble modeling techniques to predict patient status across three classes with high accuracy and low log loss.
