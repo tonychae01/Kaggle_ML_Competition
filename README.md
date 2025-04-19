@@ -103,7 +103,6 @@ This repository contains the code and supporting files for the liver cirrhosis c
       'n_estimators': 687
   }
   ```  
-  citeturn0file0
 
 ### 5. Pseudo‑Labeling (Exploratory)  
 - Generated pseudo‑labels on test set using high‑confidence predictions (≥ 0.90 threshold)  
