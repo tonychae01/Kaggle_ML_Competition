@@ -11,7 +11,7 @@
 This repository contains the code and supporting files for the liver cirrhosis classification project that earned **3rd place** in the [Kaggle Cirrhosis Prediction Competition](https://www.kaggle.com/competitions) under the “multi-class classification” challenge. We leverage advanced data-cleaning, feature-engineering, and ensemble modeling techniques to predict patient status across three classes with high accuracy and low log loss.
 
 ---
-
+```
 ## Repository Structure
 
 ├── data/
