@@ -71,24 +71,24 @@ This repository contains the code and supporting files for the liver cirrhosis c
 ## Methodology
 
 ### 1. Data Cleaning & Imputation  
-- Identified categorical columns (`Drug`, `Sex`, `Ascites`, `Hepatomegaly`, `Spiders`, `Edema`, `Stage`) and continuous columns (e.g., `Age`, `Bilirubin`, `Albumin`) citeturn0file0  
+- Identified categorical columns (`Drug`, `Sex`, `Ascites`, `Hepatomegaly`, `Spiders`, `Edema`, `Stage`) and continuous columns (e.g., `Age`, `Bilirubin`, `Albumin`)
 - Addressed missing values using multiple strategies:
   - **Simple Imputer** (mean/mode)
   - **Iterative Imputer** (MissForest)
   - **Random Imputer** (uniform sampling)
-- Experimented with combinations of one‑hot encoding and normalization for different model types citeturn0file0
+- Experimented with combinations of one‑hot encoding and normalization for different model types 
 
 ### 2. Feature Engineering  
 - Exploited domain knowledge on cirrhosis clinical signs:
   - Grouped N/A patterns among `Ascites`, `Hepatomegaly`, `Spiders`
   - Captured `Bilirubin`–`Edema` relationships
   - Encoded N/A patterns as new categorical features
-- Augmented original 20 features to **27 engineered columns** citeturn0file0
+- Augmented original 20 features to **27 engineered columns** 
 
 ### 3. Modeling & Ensembling  
 - **Single best model**: XGBoost (`multi:softprob`) on GPU (CUDA)  
 - **Ensemble strategy**: Trained **5 XGBoost** instances with different random seeds, averaged predicted probabilities  
-- Explored stacking with RandomForest, LightGBM, SVM, CatBoost using a logistic-regression meta-learner (ultimately outperformed by the XGBoost ensemble) citeturn0file0
+- Explored stacking with RandomForest, LightGBM, SVM, CatBoost using a logistic-regression meta-learner (ultimately outperformed by the XGBoost ensemble) 
 
 ### 4. Hyperparameter Optimization  
 - Evaluated **GridSearch**, **RandomizedSearch**, and **Optuna** (Tree‑structured Parzen Estimator)  
@@ -107,7 +107,7 @@ This repository contains the code and supporting files for the liver cirrhosis c
 ### 5. Pseudo‑Labeling (Exploratory)  
 - Generated pseudo‑labels on test set using high‑confidence predictions (≥ 0.90 threshold)  
 - Augmented training data from 15,000 → ~22,000 samples  
-- Observed overfitting to known test labels; final submission **did not** incorporate pseudo‑labels citeturn0file0
+- Observed overfitting to known test labels; final submission **did not** incorporate pseudo‑labels 
 
 ---
 
